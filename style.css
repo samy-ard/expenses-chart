@@ -1,0 +1,185 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--burnt-sienna: hsl(10, 79%, 65%);
+	--neptune: hsl(186, 34%, 60%);
+	--cedar: hsl(25, 47%, 15%);
+	--squirrel: hsl(28, 10%, 53%);
+	--linen: hsl(27, 66%, 92%);
+	--bridal-heath: hsl(33, 100%, 98%);
+}
+
+html, body {
+	margin: 0;
+	color: var(--cedar);
+	font-family: 'DM Sans', sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+	background-color: var(--linen);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 1.44444rem;
+}
+
+h2, .h2 {
+	font-size: 1.66667rem;
+}
+
+h3, .h3 {
+	font-size: 1.33333rem;
+}
+
+h6, .h6 {
+	font-size: 0.83333rem;
+}
+
+img {
+	display: block;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.space-between {
+	justify-content: space-between;
+}
+
+.mb-0 {
+	margin-bottom: 0!important;
+}
+
+.lh-1 {
+	line-height: 1;
+}
+
+.d-block {
+	display: block;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.main {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	min-height: 100vh;
+	padding: 3.72222rem 0 3.55555rem;
+}
+
+.box {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 20.83333rem;
+	padding: 0 0.88888rem;
+}
+
+.balance {
+	color: var(--bridal-heath);
+	margin-bottom: 0.88888rem;
+	padding: 1rem 1.33333rem 1.16667rem 1.11111rem;
+	border-radius: 0.55555rem;
+	background-color: var(--burnt-sienna);
+}
+
+.balance-title {
+	display: block;
+	font-size: 0.833333rem;
+}
+
+.logo {
+	width: 3.33333rem;
+}
+
+.spending-chart {
+	padding: 1.16667rem 1.11111rem;
+	border-radius: 0.55555rem;
+	background-color: var(--bridal-heath);
+}
+
+.chart {
+	width: 100%;
+	margin: 0 -0.33333rem 1.27777rem;
+	max-height: 11.22222rem;
+}
+
+.total {
+	padding-top: 1.22222rem;
+	border-top: 0.16667rem solid var(--linen);
+}
+
+.total-title, .previous-month {
+	display: block;
+	font-size: 0.83333rem;
+}
+
+@media screen and (min-width: 1200px) {
+	.main {
+		padding: 10.11111rem 0 10.38888rem;
+	}
+
+	.box {
+		padding: 0 0.88888rem;
+		max-width: 31.77778rem;
+	}
+
+	.balance {
+		border-radius: 1rem;
+		margin-bottom: 1.33333rem;
+		padding: 1.44444rem 2.22222rem 1.27777rem 1.77777rem;
+	}
+
+	.balance-title {
+		font-size: 1rem;
+	}
+
+	h2, .h3 {
+		font-size: 2.61111rem;
+	}
+
+	h3, .h3 {
+		font-size: 1.77777rem;
+	}
+
+	.logo {
+		width: auto;
+	}
+
+	.spending-chart {
+		border-radius: 1rem;
+		padding: 1.61111rem 2.27777rem;
+		box-shadow: 0 0.5rem 2rem 0.005555rem var(--squirrel);
+	}
+
+	.chart-title {
+		margin-bottom: 2.38889rem;
+	}
+
+	.chart {
+		margin: 0 -0.555555rem 1.55555rem;
+	}
+
+	.total {
+		padding-top: 1.61111rem;
+	}
+
+	.total-title,
+	.previous-month {
+		font-size: 1rem;
+	}
+
+	.previous-month {
+		line-height: 1.88888;
+	}
+}

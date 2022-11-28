@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Expenses chart component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+  <main class="main">
+    <div class="box">
+      <header class="balance">
+        <div class="row align-center space-between">
+          <div class="col">
+            <span class="balance-title">My balance</span>
+            <h3 class="mb-0">$921.48</h3>
+          </div>
+          <div class="col">
+            <img class="logo" src="./images/logo.svg" alt="Logo" />
+          </div>
+        </div>
+      </header>
+      <div class="spending-chart">
+        <h1 class="h3 chart-title">Spending - Last 7 days</h1>
+        <canvas id="chart" class="chart" height="400"></canvas>
+        <div class="total">
+          <span class="total-title">Total this month</span>
+          <div class="row align-center space-between">
+            <div class="col">
+              <h2 class="mb-0">$478.33</h2>
+            </div>
+            <div class="col text-right">
+              <span class="previous-month"><strong class="d-block lh-1">+2.4%</strong>from last month</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.1/chart.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
