@@ -66,7 +66,7 @@
 		};
 
 		$.ajax({
-		  url: "data.json",
+		  url: "https://samy-ard.github.io/expenses-chart/data.json",
 		  type: "POST",
 		  dataType: "json",
 		  timeout: 10000,
